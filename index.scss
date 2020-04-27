@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://data.1freewallpapers.com/download/nebula-stars-outer-space-sci-fi-1080p.jpg);
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    opacity: 80%;
+
+}
+
+.container {
+    display: grid;
+    grid-template: 80px 1fr 16px / 70% 1fr;
+    grid-template-areas: "header header"
+                         "main controles"
+                         "footer footer";
+    #header {
+        grid-area: header;
+        background: linear-gradient(260deg, rgba(0, 0, 0, .2), black 80%);
+        color: white;
+        opacity: 100;
+        padding-left: 60px;
+        padding-top: 5px;
+        .nombre {
+            img {
+                display: inline-block;
+                width: 70px;
+                border-radius: 150px;
+                opacity: none;
+            }
+            h1 {
+                display: inline-block;
+                position: relative;
+                bottom: 25px;
+                margin-left: 15px;;
+                // background: url(https://img.freepik.com/foto-gratis/primer-plano-galaxia-via-lactea-estrellas-polvo-espacial-universo_33900-130.jpg?size=626&ext=jpg);
+                // color: transparent;
+                // -webkit-background-clip: text;
+                // font-weight: bold;
+                // font-size: 50px;
+
+            }
+        }
+
+    }
+    #main {
+        grid-area: main;
+        text-align: center;
+        margin-top: 25px;
+        .canvas {
+            background: rgba(200, 200, 200, .5);
+        }
+        
+    }
+    #controles {
+        grid-area: controles;
+        .controls {
+            background: rgba(0, 0, 50, .4);
+            border-radius: 20px;
+            padding: 10px;
+            margin-top: 20px;
+            width: 60%;
+            .colores {
+                display: flex;
+                align-items: center;                
+                justify-content: space-evenly;
+                .btncolores {
+                    height: 20px;
+                }
+                #color1 {
+                    background: red;
+                    border-radius: 2px;
+                }
+                #color2 {
+                    background: blue;
+                    border-radius: 2px;
+                }
+                #color3 {
+                    background: blueviolet;
+                    border-radius: 2px;
+                }
+                #color4 {
+                    background: goldenrod;
+                    border-radius: 2px;
+                }
+                #color5 {
+                    background: whitesmoke;
+                    border-radius: 2px;
+                }
+                #color6 {
+                    background: green;
+                    border-radius: 2px;
+                }
+            }
+            .titulos {
+                color: rgba(200, 200, 235, .9);
+                text-align: center;
+            }
+            #grosor {
+                margin-bottom: 5px;
+                margin-top: 25px;
+            }
+            .grosorControles {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 0 40px;
+                button {
+                    padding: 0;
+                    border-radius: 5px;
+                    border: none;
+                    background: rgba(200,200,200,.5);
+                    i {
+                        font-size: 35px;
+                    }
+                }
+                p {
+                    background: white;
+                    font-size: 20px;
+                    opacity: 80%;
+                    height: 30px;
+                    width: 30px;
+                    text-align: center;
+                    // margin-top: 10px;
+                }
+            }
+            .space {
+                text-align: center;
+                button {
+                    // background: url(https://img.freepik.com/foto-gratis/primer-plano-galaxia-via-lactea-estrellas-polvo-espacial-universo_33900-130.jpg?size=626&ext=jpg);
+                    width: 100%;
+                    opacity: 80%;
+                    border-radius: 2px;
+                    // border: none;
+                    // color: white;
+                }
+            }
+            .flechas {
+                .buttons {
+                    display: grid;
+                    grid-template: repeat(2, 30px) / repeat(3, 30px);
+                    grid-gap: 2px;
+                    justify-content: center;
+                    opacity: 80%;
+                    margin-bottom: 20px;
+                    .item:nth-of-type(1) {
+                        grid-column: 2 / 3;
+                        border-radius: 1px;
+                    }
+                    .item:nth-of-type(2) {
+                        grid-row: 2 / 3;
+                        grid-column: 1 / 2;
+                        border-radius: 1px;
+                    }
+                    .item:nth-of-type(3) {
+                        grid-column: 2 / 3;
+                        grid-row: 2 / 3;
+                        border-radius: 1px;
+                    }
+                    .item:nth-of-type(4) {
+                        grid-column: 3 / 4;
+                        grid-row: 2 / 3;
+                        border-radius: 1px;
+                    }
+                }
+            }
+        }
+    }
+    #footer {
+        grid-area: footer;
+        background: linear-gradient(90deg, rgba(0, 0, 0, .2), black 80%);
+        color: white;
+        font-size: 14px;
+        padding: 0;
+        p {
+            margin: 0;
+            text-align: end;
+            margin-right: 60px;
+            opacity: 60%;
+            letter-spacing: 2px;
+            strong {
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+}                         
